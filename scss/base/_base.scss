@@ -1,0 +1,15 @@
+*{
+  font-family: 'Arial';
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+a{
+  transition: all .3s;
+  &:hover{
+    color: $c-hover-link;
+  }
+}

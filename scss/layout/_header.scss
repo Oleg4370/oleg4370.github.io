@@ -1,0 +1,80 @@
+header{
+  height: 100%;
+  min-height: 100%;
+  background-image: url('../img/header.jpg');
+  background-position: center center;
+  padding-top: 30px;
+  .top-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    width: 300px;
+  }
+  .main-menu{
+    ul{
+      list-style: none;
+    }
+    li{
+      display: inline-block;
+      &:nth-last-child(n+2){
+        padding-right: 10px;
+      }
+    }
+    a{
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+      text-decoration: none;
+      &:hover{
+        color: $c-hover-link;
+      }
+    }
+  }
+
+  .tag-line{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    h1{
+      font-size: 46px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      text-shadow: 2px 1px 4px $c-hover-link;
+      animation-delay: .5s;
+    }
+    p{
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      opacity: 0;
+    }
+    &.active{
+      p{
+        opacity: 1;
+        animation-name: slideInUp;
+      }
+    }
+    span{
+      display: inline-block;
+      position: relative;
+      font-size: 24px;
+      letter-spacing: 1px;
+      &:nth-last-child(n+2){
+        padding-right: 30px;
+        &:after{
+          content: "\25CF";
+          display: inline-block;
+          position: absolute;
+          right: 5px;
+          top: 0px;
+        }
+      }
+
+    }
+  }
+}

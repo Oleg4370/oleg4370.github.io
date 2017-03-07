@@ -41,10 +41,10 @@ header{
     transform: translateY(-50%);
     width: 100%;
     h1{
-      font-size: 46px;
+      font-size: 56px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       text-shadow: 2px 1px 4px $c-hover-link;
       animation-delay: .5s;
     }
@@ -62,7 +62,7 @@ header{
     span{
       display: inline-block;
       position: relative;
-      font-size: 24px;
+      font-size: 26px;
       letter-spacing: 1px;
       &:nth-last-child(n+2){
         padding-right: 30px;

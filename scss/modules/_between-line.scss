@@ -1,0 +1,38 @@
+.between{
+  background: url('../img/bg.jpg') repeat center;
+  text-align: center;
+  padding: 50px 0;
+  h2{
+    margin: 0 auto;
+    font-size: 32px;
+  }
+  .line{
+    text-align: center;
+    padding-bottom: 30px;
+    .phone-on-line{
+      width: 40px;
+
+    }
+    .phone-svg{
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 40px;
+    }
+    &:before{
+      content: '';
+      width: 300px;
+      display: inline-block;
+      vertical-align: middle;
+      height: 2px;
+      background: linear-gradient(to right, transparent 0%, $c-hover-link 50%, $c-hover-link 100%);
+    }
+    &:after{
+      content: '';
+      width: 300px;
+      display: inline-block;
+      vertical-align: middle;
+      height: 2px;
+      background: linear-gradient(to right, $c-hover-link 0%, $c-hover-link 50%, transparent 100%);
+    }
+  }
+}

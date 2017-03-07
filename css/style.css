@@ -1458,6 +1458,9 @@ a {
   a:hover {
     color: #54A2A3; }
 
+ul {
+  padding-left: 0; }
+
 header {
   height: 100%;
   min-height: 100%;
@@ -1495,10 +1498,10 @@ header {
     transform: translateY(-50%);
     width: 100%; }
     header .tag-line h1 {
-      font-size: 46px;
+      font-size: 56px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       text-shadow: 2px 1px 4px #54A2A3;
       animation-delay: .5s; }
     header .tag-line p {
@@ -1511,7 +1514,7 @@ header {
     header .tag-line span {
       display: inline-block;
       position: relative;
-      font-size: 24px;
+      font-size: 26px;
       letter-spacing: 1px; }
       header .tag-line span:nth-last-child(n+2) {
         padding-right: 30px; }
@@ -1539,17 +1542,112 @@ header {
     animation-fill-mode: both;
     animation-name: rotate; }
 
+.about-us {
+  text-align: center;
+  color: white;
+  background-image: url("../img/ipad_iphone_ipod.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 1; }
+  .about-us:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: -1; }
+  .about-us .container {
+    padding-bottom: 20px;
+    padding-top: 50px; }
+    .about-us .container ul {
+      list-style: none;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      overflow: hidden; }
+      .about-us .container ul li {
+        display: inline-block;
+        vertical-align: top;
+        width: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 110px auto;
+        padding-top: 140px;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 1px; }
+        .about-us .container ul li.case {
+          background-image: url("../img/briefcase.svg"); }
+        .about-us .container ul li.clients {
+          background-image: url("../img/talking.svg"); }
+        .about-us .container ul li.time {
+          background-image: url("../img/passage-of-time.svg"); }
+        .about-us .container ul li.work {
+          background-image: url("../img/studying.svg"); }
+
+.what-we-do {
+  padding: 50px 0; }
+  .what-we-do .container {
+    text-align: justify;
+    font-size: 0; }
+    .what-we-do .container:after {
+      content: '';
+      width: 100%;
+      display: inline-block; }
+    .what-we-do .container .item {
+      display: inline-block;
+      vertical-align: top;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 30%;
+      background-color: white;
+      box-shadow: 0 0 5px 0 #0b0b0b; }
+      .what-we-do .container .item h5 {
+        margin: 0;
+        padding: 20px 10px;
+        font-size: 24px;
+        background-color: #54A2A3;
+        color: white; }
+      .what-we-do .container .item ul {
+        list-style: none;
+        margin: 20px 15px;
+        padding-left: 0; }
+        .what-we-do .container .item ul li {
+          display: block;
+          position: relative;
+          padding-left: 20px;
+          text-align: left;
+          font-size: 16px;
+          line-height: 22px;
+          margin-bottom: 10px; }
+          .what-we-do .container .item ul li:before {
+            content: '\2713';
+            display: inline-block;
+            position: absolute;
+            left: 0; }
+
 .between {
   background: url("../img/bg.jpg") repeat center;
-  height: 200px;
   text-align: center;
   padding: 50px 0; }
   .between h2 {
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 32px; }
   .between .line {
     text-align: center;
     padding-bottom: 30px; }
-    .between .line #phone-on-line {
+    .between .line .phone-on-line {
       width: 40px; }
     .between .line .phone-svg {
       display: inline-block;
@@ -1569,58 +1667,5 @@ header {
       vertical-align: middle;
       height: 2px;
       background: linear-gradient(to right, #54A2A3 0%, #54A2A3 50%, transparent 100%); }
-
-#about-us {
-  text-align: center;
-  color: white;
-  background-image: url("../img/ipad_iphone_ipod.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  position: relative;
-  z-index: 1; }
-  #about-us:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1; }
-  #about-us .container {
-    padding-bottom: 20px;
-    padding-top: 50px; }
-    #about-us .container ul {
-      list-style: none;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -ms-flex-pack: distribute;
-      justify-content: space-around; }
-      #about-us .container ul li {
-        display: inline-block;
-        vertical-align: top;
-        width: 400px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-bottom: 50px;
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: 110px auto;
-        padding-top: 140px;
-        font-size: 17px;
-        line-height: 22px;
-        letter-spacing: 1px; }
-        #about-us .container ul li.case {
-          background-image: url("../img/briefcase.svg"); }
-        #about-us .container ul li.clients {
-          background-image: url("../img/talking.svg"); }
-        #about-us .container ul li.time {
-          background-image: url("../img/passage-of-time.svg"); }
-        #about-us .container ul li.work {
-          background-image: url("../img/studying.svg"); }
 
 /*# sourceMappingURL=style.css.map */

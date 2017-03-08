@@ -3,8 +3,6 @@ $(document).ready(function(){
         $('.tag-line').addClass('active');
     },1500);
 
-    myParaxify = paraxify('.about-us');
-
     var wow = new WOW(
         {
             boxClass:     'wow',      // animated element css class (default is wow)

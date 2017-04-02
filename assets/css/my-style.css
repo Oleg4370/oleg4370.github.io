@@ -1,0 +1,35 @@
+/*.form-control.ng-valid{
+    box-shadow: 0 0 8px rgba(0, 255, 0, .9);
+}*/
+.form-control.ng-invalid{
+    box-shadow: 0 0 8px rgba(255, 0, 0, .9);
+}
+
+.tabs-wrapper{
+    width: 500px;
+    margin: 0 auto;
+}
+.innerImg{
+    width: 100px;
+    height: 100px;
+    border: 1px solid green;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+img{
+    height: 100%;
+}
+
+.imgWrapper{
+    height: 100%;
+}
+.align-middle{
+    vertical-align: middle!important;
+}
+
+.best-players{
+    margin-top: 20px;
+}

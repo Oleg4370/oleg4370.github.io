@@ -33,3 +33,27 @@ img{
 .best-players{
     margin-top: 20px;
 }
+
+@media screen and (max-width:600px) {
+    .tabs-wrapper{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .innerImg{
+        width: calc(25% - 5px);
+        padding-bottom: calc(25% - 5px);
+        height: auto;
+        margin-bottom: 5px;
+        margin-right: 0;
+        position: relative;
+    }
+    .innerImg .imgWrapper{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
